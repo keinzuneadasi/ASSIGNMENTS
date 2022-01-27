@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D885A3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:text="YOU LOVE THE LAMBORGHINI \n URUS"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="THIS ARE THEY  202MPH LAMBORGHINI URUS  WITH 802HP FROM TUNER"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imagery3"
+        android:src="@drawable/lambo"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/imagery"
+        android:src="@drawable/lamborghini_urus"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintTop_toBottomOf="@id/texta"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/todo"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/imagery2"
+        android:src="@drawable/lambo"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintTop_toBottomOf="@id/texta"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/buttona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/click_here_for_more"
+        android:layout_marginTop="120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
